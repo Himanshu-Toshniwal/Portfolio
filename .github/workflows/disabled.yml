@@ -1,0 +1,16 @@
+# GitHub Actions workflow disabled
+# Uncomment and configure when needed
+
+# name: Portfolio Docker Deployment
+# 
+# on:
+#   push:
+#     branches: [ main ]
+# 
+# jobs:
+#   build-and-push:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Build Docker image
+#       run: docker build -t portfolio-app .

@@ -1,4 +1,4 @@
-name: Portfolio Docker Deployment
+name: Deploy Portfolio to Docker Hub
 
 on:
   push:
@@ -25,5 +25,8 @@ jobs:
         push: true
         tags: himanshutoshniwal7570/portfolio-app:latest
     
-    - name: Image pushed successfully
-      run: echo "Portfolio image pushed to Docker Hub successfully!"
+    - name: Deployment Success
+      run: |
+        echo "✅ Portfolio successfully built and pushed to Docker Hub!"
+        echo "🚀 Image: himanshutoshniwal7570/portfolio-app:latest"
+        echo "📦 Pull command: docker pull himanshutoshniwal7570/portfolio-app:latest"
